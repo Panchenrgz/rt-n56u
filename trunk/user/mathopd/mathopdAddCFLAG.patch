@@ -1,0 +1,11 @@
+--- mathopd-1.5p8/src/Makefile	2007-07-21 18:54:44.000000000 +0800
++++ Makefile	2024-08-30 20:41:27.096489200 +0800
+@@ -12,7 +12,7 @@
+ # LIBS = -lsocket -lnsl -lresolv
+ 
+ # On Linux, uncomment the following
+-# CPPFLAGS = -DHAVE_CRYPT_H
++ CPPFLAGS = -DHAVE_CRYPT_H
+ 
+ # For Linux or Solaris:
+ # To add support for large files (>2GB), uncomment the following.
