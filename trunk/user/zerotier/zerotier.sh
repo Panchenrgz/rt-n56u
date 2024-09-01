@@ -216,7 +216,7 @@ zerotier_keep  () {
 	logger -t "【ZeroTier】" "守护进程启动"
 	sed -Ei '/ZeroTier守护进程|^$/d' "$F"
 	cat >> "$F" <<-OSC
-	/12 /5 * * * * test -z "\`pidof zerotier-one\`"  && /etc/storage/zerotier.sh restart #ZeroTier守护进程
+	/12 /5 * * * * test -z "\`pidof zerotier-one\`"  && zerotier.sh restart #ZeroTier守护进程
 	OSC
 	zero_ping &
 }
